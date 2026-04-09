@@ -1,0 +1,44 @@
+.tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; }
+.tab { padding: 10px 20px; font-size: 14px; border: none; background: none; color: var(--text-secondary); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s; }
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 500; }
+
+.arendeCard { margin-bottom: 10px; }
+.arendeRow { display: flex; align-items: center; gap: 12px; }
+.arendeInfo { flex: 1; }
+.arendeName { font-size: 14px; font-weight: 500; }
+.arendeMeta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.steg2Status { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.steg2Title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px; }
+.statusRow { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 13px; }
+.statusDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.done { background: var(--accent); }
+.notDone { background: var(--border-strong); }
+.statusText { flex: 1; color: var(--text-secondary); }
+.statusOk { font-size: 11px; color: var(--accent-text); background: var(--accent-light); padding: 2px 7px; border-radius: 100px; }
+
+.utredCard { margin-bottom: 1rem; }
+.utredHeader { display: flex; align-items: center; gap: 14px; margin-bottom: 1rem; }
+.utredName { font-size: 16px; font-weight: 600; }
+.utredMeta { font-size: 12px; color: var(--text-muted); margin-top: 3px; display: flex; align-items: center; gap: 6px; }
+.checklistSection { margin-bottom: 10px; }
+.checklistTitle { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; color: var(--text-muted); margin-bottom: 4px; }
+.progress { font-size: 12px; color: var(--text-muted); font-family: 'DM Mono', monospace; }
+
+.studentPicker { display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.pickerLabel { font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+.pickerList { display: flex; gap: 6px; flex-wrap: wrap; }
+.pickerBtn { display: flex; align-items: center; gap: 6px; padding: 5px 12px 5px 6px; border: 1px solid var(--border); border-radius: 100px; background: var(--surface); font-size: 13px; color: var(--text-secondary); transition: all 0.15s; }
+.pickerBtn:hover { border-color: var(--border-strong); color: var(--text); }
+.pickerBtn.pickerActive { border-color: var(--accent); color: var(--accent-text); background: var(--accent-light); font-weight: 500; }
+
+.docHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.docName { font-size: 15px; font-weight: 500; }
+.docKlass { font-size: 12px; color: var(--text-muted); }
+
+.logForm { display: flex; gap: 8px; margin-bottom: 1rem; }
+.logSelect { padding: 8px 10px; font-size: 13px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); outline: none; }
+.logInput { flex: 1; padding: 8px 12px; font-size: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); outline: none; }
+.logInput:focus { border-color: var(--accent); }
+.logBtn { padding: 8px 16px; font-size: 13px; background: var(--accent); color: white; border: none; border-radius: var(--radius-sm); font-weight: 500; }

@@ -1,0 +1,121 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.badge_md { font-size: 12px; padding: 3px 10px; }
+.badge_sm { font-size: 11px; padding: 2px 7px; }
+.badge_ok { background: var(--accent-light); color: var(--accent-text); }
+.badge_warn { background: var(--warn-light); color: var(--warn-text); }
+.badge_danger { background: var(--danger-light); color: var(--danger-text); }
+.badge_info { background: var(--info-light); color: var(--info-text); }
+
+.avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+  letter-spacing: 0.3px;
+}
+.avatar_md { width: 38px; height: 38px; font-size: 13px; }
+.avatar_sm { width: 30px; height: 30px; font-size: 11px; }
+.avatar_lg { width: 48px; height: 48px; font-size: 16px; }
+.avatar_ok { background: var(--accent-light); color: var(--accent-text); }
+.avatar_warn { background: var(--warn-light); color: var(--warn-text); }
+.avatar_danger { background: var(--danger-light); color: var(--danger-text); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 1rem;
+}
+
+.statPill {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+}
+.statPill_warn .statVal { color: var(--warn); }
+.statPill_danger .statVal { color: var(--danger); }
+.statPill_ok .statVal { color: var(--accent); }
+.statVal { font-size: 20px; font-weight: 600; line-height: 1.2; }
+.statLabel { font-size: 10px; color: var(--text-muted); text-align: center; margin-top: 2px; }
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  background: var(--surface);
+}
+.checkbox:hover { border-color: var(--accent); }
+.checkbox.checked {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.checkText { font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; }
+.checkTextDone { color: var(--text-muted); text-decoration: line-through; }
+
+.warnBanner {
+  background: var(--warn-light);
+  border: 1px solid #e8c97a;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.empty {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logEntry {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.logEntry:last-child { border-bottom: none; }
+.logMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.logDate { font-size: 11px; color: var(--text-muted); font-family: 'DM Mono', monospace; }
+.logText { font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; }

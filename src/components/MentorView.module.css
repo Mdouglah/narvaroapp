@@ -1,0 +1,233 @@
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.tab {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background: none;
+  color: var(--text-secondary);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  font-weight: 400;
+  transition: color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 500; }
+
+.warnTitle { font-size: 13px; font-weight: 600; color: var(--warn-text); margin-bottom: 8px; }
+.warnItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--warn-text);
+  padding: 4px 0;
+  cursor: pointer;
+}
+.warnItem:hover { text-decoration: underline; }
+.warnArrow { margin-left: auto; font-size: 12px; }
+
+.listHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+.listCount { font-size: 13px; color: var(--text-muted); }
+.addBtn {
+  font-size: 13px;
+  padding: 6px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.addBtn:hover { opacity: 0.85; }
+
+.addForm { margin-bottom: 1rem; }
+.formTitle { font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
+.formGrid { display: flex; flex-direction: column; gap: 10px; }
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+.input:focus { border-color: var(--accent); }
+.absRow { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--text-secondary); }
+.absRow label { flex: 1; }
+.inputNum {
+  width: 80px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  text-align: right;
+  outline: none;
+}
+.inputNum:focus { border-color: var(--accent); }
+.formActions { display: flex; gap: 8px; }
+.saveBtn {
+  padding: 7px 18px;
+  font-size: 13px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+.cancelBtn {
+  padding: 7px 18px;
+  font-size: 13px;
+  background: none;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.studentList { display: flex; flex-direction: column; gap: 10px; }
+.studentCard { padding: 1rem; cursor: default; }
+.selectedCard { border-color: var(--accent) !important; }
+.studentRow { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.studentInfo { flex: 1; }
+.studentName { font-size: 14px; font-weight: 500; }
+.studentKlass { font-size: 12px; color: var(--text-muted); }
+.studentStats { display: flex; gap: 6px; }
+
+.expandedStudent { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.absenceEdit { margin-bottom: 12px; }
+.absTitle { font-size: 12px; font-weight: 500; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.absFields { display: flex; gap: 16px; flex-wrap: wrap; }
+.absField { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-secondary); }
+.expandedActions { display: flex; gap: 8px; flex-wrap: wrap; }
+.actionBtn {
+  font-size: 13px;
+  padding: 7px 14px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.actionBtn:hover { background: var(--accent-light); }
+
+.studentPicker { display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.pickerLabel { font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+.pickerList { display: flex; gap: 6px; flex-wrap: wrap; }
+.pickerBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px 5px 6px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--surface);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+}
+.pickerBtn:hover { border-color: var(--border-strong); color: var(--text); }
+.pickerBtn.pickerActive { border-color: var(--accent); color: var(--accent-text); background: var(--accent-light); font-weight: 500; }
+
+.trappHeader { display: flex; align-items: center; gap: 14px; margin-bottom: 1.5rem; }
+.trappName { font-size: 18px; font-weight: 600; letter-spacing: -0.3px; }
+.trappKlass { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; margin-top: 2px; }
+
+.stepProgress { display: flex; align-items: center; margin-bottom: 1.5rem; }
+.stepProgressItem { display: flex; align-items: center; flex: 1; }
+.stepProgressItem:last-child { flex: 0; }
+.stepDot {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 600;
+  background: var(--surface2);
+  color: var(--text-muted);
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.stepDotActive { background: var(--accent); color: white; border-color: var(--accent); }
+.stepDotDone { background: var(--accent-light); color: var(--accent-text); border-color: var(--accent); }
+.stepLine { flex: 1; height: 2px; background: var(--border); margin: 0 4px; }
+.stepLineDone { background: var(--accent); }
+
+.stegCard { position: relative; overflow: hidden; margin-bottom: 1rem; padding-left: 1.5rem; }
+.stegStripe { position: absolute; left: 0; top: 0; bottom: 0; width: 4px; }
+.stripe1 { background: var(--accent); }
+.stripe2 { background: var(--warn); }
+.stripe3 { background: var(--danger); }
+.stegContent {}
+.stegNum { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.stegRole { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+.stegItems {}
+.stegItem { font-size: 13.5px; color: var(--text-secondary); padding: 3px 0; }
+.triggerBox {
+  font-size: 12.5px;
+  color: var(--warn-text);
+  background: var(--warn-light);
+  border: 1px solid #e8c97a;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+.checkSection { margin-top: 4px; }
+.checkTitle { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+
+.noActionNeeded {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--accent-light);
+  border: 1px solid #9bcfac;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 14px;
+  color: var(--accent-text);
+  margin-top: 1rem;
+}
+.noActionIcon { font-size: 20px; color: var(--accent); }
+
+.docHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.docName { font-size: 15px; font-weight: 500; }
+.docKlass { font-size: 12px; color: var(--text-muted); }
+
+.logForm { display: flex; gap: 8px; margin-bottom: 1rem; }
+.logSelect {
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+.logInput {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+.logInput:focus { border-color: var(--accent); }
+.logBtn {
+  padding: 8px 16px;
+  font-size: 13px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+.logList {}

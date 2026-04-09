@@ -1,0 +1,124 @@
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.metric {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.metricVal {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.metricLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.metricSub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.alertCard {
+  margin-bottom: 1.5rem;
+  border-color: #e8a5a5;
+  background: var(--danger-light);
+}
+
+.alertTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--danger-text);
+  margin-bottom: 10px;
+}
+
+.alertRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.alertRow:last-child { border-bottom: none; }
+
+.alertName {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--danger-text);
+}
+
+.alertKlass {
+  font-size: 12px;
+  color: var(--danger);
+}
+
+.alertStats {
+  font-size: 12px;
+  color: var(--danger);
+  font-family: 'DM Mono', monospace;
+}
+
+.klassCard {
+  margin-bottom: 1rem;
+}
+
+.klassHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.klassTitle {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.klassCount {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.elevRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.elevRow:last-child { border-bottom: none; }
+
+.elevName {
+  flex: 1;
+  font-size: 13.5px;
+}
+
+.elevStats {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'DM Mono', monospace;
+}
+
+@media (max-width: 600px) {
+  .metricGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
